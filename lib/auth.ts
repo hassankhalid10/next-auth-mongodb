@@ -50,6 +50,7 @@ export const authOptions: NextAuthOptions  = {
         if (user) {
           console.log(user)
           token.userrole = user.role || "user"; // Assuming 'role' exists on the user object
+          token.test = 1;  // my custom session value
         }
         return token;
       },
@@ -57,6 +58,7 @@ export const authOptions: NextAuthOptions  = {
       async session({ session, token }) {
         if (token.userrole) {
           session.userrole = token.userrole; // Adding userrole to session object
+          session.test = 1;   // my custom session value
         }
         return session;
       },
