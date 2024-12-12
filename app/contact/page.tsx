@@ -1,8 +1,8 @@
 "use client";
-export default function About() {
+export default function Contact() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center">
-      <h1 className="text-xl">This is the About Us Page</h1>
+      <h1 className="text-xl">This is the Contact Us Page</h1>
       <p>This page is protected and only visible to logged-in users.</p>
     </main>
   );
@@ -13,10 +13,10 @@ export default function About() {
 // import { useSession } from "next-auth/react";
 // import { useRouter } from "next/navigation";
 
-// export default function About() {
+// export default function Contact() {
 //   const { data: session, status } = useSession();
 //   const router = useRouter();
-//   console.log("session status == "+status)
+//   console.log("session status = "+status)
 
 //   if (status === "loading") {
 //     return <p>Loading...</p>;
@@ -31,7 +31,7 @@ export default function About() {
 
 //   return (
 //     <main className="flex min-h-screen flex-col items-center justify-center">
-//       <h1 className="text-xl">This is the About Us Page</h1>
+//       <h1 className="text-xl">This is the Contact Us Page</h1>
 //       <p>This page is protected and only visible to logged-in users.</p>
 //     </main>
 //   );
